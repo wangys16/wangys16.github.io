@@ -1,10 +1,4 @@
 # main links links
 main:
-  - title: "Projects"
-    url: /projects/
-
-  - title: "NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects"
-    url: /projects/nerf-ds
-    
   - title: "CV"
     url: /cv/
