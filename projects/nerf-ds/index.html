@@ -153,111 +153,22 @@
                                 <h6><strong>Code</strong></h6>
                             </a>
                         </li>
+                        <li class="nav-item text-center">
+                            <a href="https://github.com/JokerYan/NeRF-DS/releases/tag/v0.1-pre-release">
+                            <image src="img/database.png" height="60px">
+                                <h6><strong>Data</strong></h6>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="row mb-3" id="teaser-kitti">
+            <video width="320" height="240" controls>
+              <source src="img/qualitative.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <div class="row mb-3">
                 <div class="col-md-12 mx-auto">
-                <div class="pb-4">
-                    <div class="row gif-label pb-1 no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">Single Image Input</div>
-                        <div class="col-1"></div>
-                        <div class="col-3">Synthesized RGB</div>
-                        <div class="col-3">Synthesized Disparity</div>
-                    </div>
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/365_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/365_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/365_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/843_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/843_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/843_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/1035_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/1035_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/1035_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/2_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/2_zoom-in_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/2_zoom-in_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/359_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/359_zoom-in_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/kitti/359_zoom-in_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-                </div>
                 </div>
             </div>
 
@@ -349,45 +260,33 @@
 
             <div class="row mb-3", id="abstract">
                 <div class="col-md-12 mx-auto">
-                    <h4>Abstract and Method</h4>
+                    <h4>Abstract</h4>
                     <p class="text-justify">
-                    We propose <strong>MINE</strong>, an approach to perform novel view synthesis and depth estimation via dense 3D reconstruction from a single image. 
-                    MINE is a continuous-depth generalization of <strong>M</strong>ultiplane <strong>I</strong>mages (MPI) by introducing the <strong>NE</strong>ural radiance fields.
-                    Given a single image as input, our method predicts a 4-channel image (RGB and volume density) at arbitrary depth values to jointly reconstruct the camera frustum and fill in occluded contents. 
-                    The reconstructed and inpainted frustum can then be easily rendered into any novel RGB or depth views using differentiable rendering.<br>
+                    Dynamic Neural Radiance Field (NeRF) is a powerful algorithm capable of rendering photo-realistic novel view images from a monocular RGB video of a dynamic scene.
+                    Although it warps moving points across frames from the observation spaces to a common canonical space for rendering, dynamic NeRF does not model the change of the reflected color during the warping.
+                    As a result, this approach often fails drastically on challenging specular objects in motion. We address this limitation by reformulating the neural radiance field function to be conditioned on surface position and orientation in the observation space.
+                    This allows the specular surface at different poses to keep the different reflected colors when mapped to the common canonical space. Additionally, we add the mask of moving objects to guide the deformation field.
+                    As the specular surface changes color during motion, the mask mitigates the problem of failure to find temporal correspondences with only RGB supervision.
+                    We evaluate our model based on the novel view synthesis quality with a self-collected dataset of different moving specular objects in realistic environments.
+                    The experimental results demonstrate that our method significantly improves the reconstruction quality of moving specular objects from monocular RGB videos compared to the existing NeRF models.<br>
                     </p>
 
-                    <img src="img/overview.png" class="img-responsive">
+                    <img src="img/specular under translation rotation.png" class="img-responsive" style="transform: scale(0.7)">
+
+                    <p class="text-justify">
+                    As shown in the figure above, a surface can reflect different colors after a translation or rotation.
+                    However, existing dynamic NeRF models still warp the points to the same canonical position.
+                    The point before and after the movement will be forced to render the same color and could cause severe artifact.
+                    To address this issue, the rendered color should also be conditioned on the surface position and orientation before the warping.
+                    </p>
+
+                    <img src="img/full_architecture.png" class="img-responsive">
 
                     <br><p class="text-justify">
-                    Our network is an encoder-decoder architecture that takes a single image and a list of continuous depth values as inputs and outputs the reconstructed source camera frustum. 
-                    MINE reconstructs the camera frustum <strong>per plane</strong>. 
-                    Our encoder is a fully convolutional network that takes a single image as input and outputs the feature maps.  
-                    The depth decoder takes this feature maps and a continuous depth value as inputs, and outputs an 4-channel image of RGB values and volume density. 
+                    Our network uses a surface aware NeRF and a mask guided deformation field to produce more accurate reconstruction of dynamic specular objects.
+                    The surface aware NeRF renders the point colors conditioned on the surface point position and predicted orientation in the observation space before warping.
+                    The mask guided deformation field predict the deformation based on a predicted mask of the dynamic object to better establish point correspondence even if the point colors change drastically.
                     </p>
-
-                    <img src="img/render.png" class="img-responsive">
-
-                    <p class="text-justify">
-                    With the reconstructed frustum of the source camera, rendering <strong>any</strong> novel view only requires an additional homography wrapping step.
-                    Imagine a ray that starts from target camera origin and intersects the target image at any pixel coordinate.
-                    This ray intersects with the predicted planes in the source camera's frustum, the RGB and volume density is then obtained with bilinear interpolation. 
-                    The novel view can then be rendered with volume rendering, similar to <a href="https://www.matthewtancik.com/nerf">[Mildenhall et al. 2020]</a>.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-12 mx-auto">
-                    <h4>Related Links</h4>
-                    <ul>
-                        <li>
-                            NeRF was proposed by <a href="https://www.matthewtancik.com/nerf">Mildenhall et al. (2020)</a>
-                        <li>
-                            Single-view novel view synthesis with Multiplane Images by <a href="https://single-view-mpi.github.io">Tucker et al. (2020)</a>
-                        <li>
-                            <a href="https://alexyu.net/pixelnerf">pixelNeRF</a> and <a href="https://arxiv.org/abs/2010.04595">GRF</a> which try to generalize NeRF to unseen scenes
-                    </ul>
                 </div>
             </div>
 
@@ -396,11 +295,11 @@
                 <div class="form-group col-md-offset-1 row-md-offset-1">
                     <h4 class="mb-3">Citation</h4>
                     <textarea id="bibtex" class="form-control" readonly>
-@inproceedings{mine2021,
-    title={MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis}, 
-    author={Jiaxin Li and Zijian Feng and Qi She and Henghui Ding and Changhu Wang and Gim Hee Lee}, 
-    year={2021}, 
-    booktitle={ICCV},
+@article{zhiwen2023nerfds,
+    title={NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects},
+    author={Zhiwen Yan and Chen Li and Gim Hee Lee},
+    journal={CVPR},
+    year={2023}
 }</textarea>
                 </div>
                 </div>
