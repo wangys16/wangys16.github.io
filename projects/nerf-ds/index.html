@@ -145,116 +145,32 @@
                             <a href="https://arxiv.org/to_do">
                             <image src="img/paper_snapshot.png" height="60px">
                                 <h6><strong>Paper</strong></h6>
+                            </image>
                             </a>
                         </li>
                         <li class="nav-item text-center">
                             <a href="https://github.com/JokerYan/NeRF-DS">
                             <image src="img/github.png" height="60px">
                                 <h6><strong>Code</strong></h6>
+                            </image>
                             </a>
                         </li>
                         <li class="nav-item text-center">
                             <a href="https://github.com/JokerYan/NeRF-DS/releases/tag/v0.1-pre-release">
                             <image src="img/database.png" height="60px">
                                 <h6><strong>Data</strong></h6>
+                            </image>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <video width="320" height="240" controls>
-              <source src="img/qualitative.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
             <div class="row mb-3">
                 <div class="col-md-12 mx-auto">
-                </div>
-            </div>
-
-            <div class="row mb-3" id="teaser-nyu">
-                <div class="col-md-12 mx-auto">
-                <div class="pb-4">
-                    <div class="row gif-label pb-1 no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">Single Image Input</div>
-                        <div class="col-1"></div>
-                        <div class="col-3">Synthesized RGB</div>
-                        <div class="col-3">Synthesized Disparity</div>
-                    </div>
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/3_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/3_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/3_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/24_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/24_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/24_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/52_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/52_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/52_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-
-                    <div class="row no-gutters">
-                        <div class="col-1"></div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/123_rgb.png" class="img-responsive">
-                        </div>
-                        <div class="col-1 io-arrow">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" />
-                            </svg>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/123_swing_rgb.gif" class="img-responsive">
-                        </div>
-                        <div class="col-3">
-                            <img src="img/teasers/nyu/123_swing_disp.gif" class="img-responsive">
-                        </div>
-                    </div> <!-- row -->
-                </div>
+                <video width="100%" controls autoplay loop>
+                  <source src="videos/concat_h264.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
                 </div>
             </div>
 
@@ -287,6 +203,11 @@
                     The surface aware NeRF renders the point colors conditioned on the surface point position and predicted orientation in the observation space before warping.
                     The mask guided deformation field predict the deformation based on a predicted mask of the dynamic object to better establish point correspondence even if the point colors change drastically.
                     </p>
+
+                    <br><p class="text-justify">
+                    Due to the lack of dynamic specular objects in existing datasets, we collect a new dataset of moving specular objects in realistic environments.
+                    You can download the dataset from <a href="https://github.com/JokerYan/NeRF-DS/releases/tag/v0.1-pre-release">here</a>.
+                    </p>
                 </div>
             </div>
 
@@ -300,7 +221,8 @@
     author={Zhiwen Yan and Chen Li and Gim Hee Lee},
     journal={CVPR},
     year={2023}
-}</textarea>
+}
+                    </textarea>
                 </div>
                 </div>
             </div>
@@ -309,9 +231,12 @@
                 <div class="col-md-12 mx-auto">
                     <h4>Acknowledgements</h4>
                     <p class="text-justify">
-                        We thank Richard Tucker for helpful discussions. This website is inspired by the template of <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                    This research is supported by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award
+                    No: AISG2-RP-2021-024), and the Tier 2 grant MOE-T2EP20120-0011 from the
+                    Singapore Ministry of Education.
                     </p>
                 </div>
             </div>
         </div> <!-- container -->
     </body>
+</DOCTYPE>
