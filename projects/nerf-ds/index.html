@@ -112,13 +112,13 @@
         <div class="container">
             <div class="row mb-2 mt-4" id="paper-title">
                 <h1 class="col-md-12 text-center">
-                    NeRF-DS
+                    Neural Interaction
                 </h1>
                 <h3 class="col-md-12 text-center">
-                    Neural Radiance Fields for Dynamic Specular Objects
+                    CS6244 Project Final Report Neural Human and Object Interaction
                 </h3>
                 <h3 class="col-md-12 text-center">
-                    <small>CVPR 2023</small>
+                    <small>CS6244 Course Project</small>
                 </h3>
             </div>
 
@@ -126,117 +126,62 @@
                 <div class="mx-auto text-center">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a href="">Zhiwen Yan</a>
+                            <a href="">Yan Zhiwen</a>
 
                         <li class="list-inline-item">
-                            <a href="https://chaneyddtt.github.io/">Chen Li</a>
-
-                        <li class="list-inline-item">
-                            <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+                            <a href="">Chen Hanlin</a>
                     </ul>
                     <p id="institution">National University of Singapore</p>
                 </div>
             </div>
 
-            <div class="row mb-2" id="links">
-                <div class="mx-auto col-md-6 col-md-offset-6">
-                    <ul class="nav nav-pills nav-justified">
-                        <li class="nav-item text-center">
-                            <a href="http://arxiv.org/abs/2303.14435">
-                            <image src="img/paper_snapshot.png" height="60px">
-                                <h6><strong>Paper</strong></h6>
-                            </image>
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://github.com/JokerYan/NeRF-DS">
-                            <image src="img/github.png" height="60px">
-                                <h6><strong>Code</strong></h6>
-                            </image>
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://github.com/JokerYan/NeRF-DS/releases/tag/v0.1-pre-release">
-                            <image src="img/database.png" height="60px">
-                                <h6><strong>Data</strong></h6>
-                            </image>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="row mb-3">
+                <div class="col-md-12 mx-auto">
+                <video width="100%" controls autoplay muted loop>
+                  <source src="videos/aist.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-12 mx-auto">
                 <video width="100%" controls autoplay muted loop>
-                  <source src="videos/concat_h264.mp4" type="video/mp4">
+                  <source src="videos/chicken.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 mx-auto">
+                <video width="100%" controls autoplay muted loop>
+                  <source src="videos/stand.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 mx-auto">
+                <video width="100%" controls autoplay muted loop>
+                  <source src="videos/tilt.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
                 </div>
             </div>
 
-            <div class="row mb-3", id="abstract">
+            <div class="row mb-3", id="description">
                 <div class="col-md-12 mx-auto">
-                    <h4>Abstract</h4>
+                    <h4>Project Descriptin</h4>
                     <p class="text-justify">
-                    Dynamic Neural Radiance Field (NeRF) is a powerful algorithm capable of rendering photo-realistic novel view images from a monocular RGB video of a dynamic scene.
-                    Although it warps moving points across frames from the observation spaces to a common canonical space for rendering, dynamic NeRF does not model the change of the reflected color during the warping.
-                    As a result, this approach often fails drastically on challenging specular objects in motion. We address this limitation by reformulating the neural radiance field function to be conditioned on surface position and orientation in the observation space.
-                    This allows the specular surface at different poses to keep the different reflected colors when mapped to the common canonical space. Additionally, we add the mask of moving objects to guide the deformation field.
-                    As the specular surface changes color during motion, the mask mitigates the problem of failure to find temporal correspondences with only RGB supervision.
-                    We evaluate our model based on the novel view synthesis quality with a self-collected dataset of different moving specular objects in realistic environments.
-                    The experimental results demonstrate that our method significantly improves the reconstruction quality of moving specular objects from monocular RGB videos compared to the existing NeRF models.<br>
+                    This project aims to simulate the physical interaction between human neural radiance fields (NeRF) with geometric objects.
+                        Given the dynamic neural human representation and a well-defined geometric object,
+                        we aim to simulate the motion of the geometric object under the physical interaction with the neural human.
+                        The motion of the object includes the angular and linear velocity of the object, under the linear and angular acceleration caused by contact force with the neural human.
+                        The force feedback on the neural human is not reflected since it is a reconstruction of the real-world.<br>
                     </p>
 
-                    <img src="img/specular under translation rotation.png" class="img-responsive" style="transform: scale(0.7)">
-
-                    <p class="text-justify">
-                    As shown in the figure above, a surface can reflect different colors after a translation or rotation.
-                    However, existing dynamic NeRF models still warp the points to the same canonical position.
-                    The point before and after the movement will be forced to render the same color and could cause severe artifact.
-                    To address this issue, the rendered color should also be conditioned on the surface position and orientation before the warping.
-                    </p>
-
-                    <img src="img/full_architecture.png" class="img-responsive">
-
-                    <br><p class="text-justify">
-                    Our network uses a surface aware NeRF and a mask guided deformation field to produce more accurate reconstruction of dynamic specular objects.
-                    The surface aware NeRF renders the point colors conditioned on the surface point position and predicted orientation in the observation space before warping.
-                    The mask guided deformation field predict the deformation based on a predicted mask of the dynamic object to better establish point correspondence even if the point colors change drastically.
-                    </p>
-
-                    <br><p class="text-justify">
-                    Due to the lack of dynamic specular objects in existing datasets, we collect a new dataset of moving specular objects in realistic environments.
-                    You can download the dataset from <a href="https://github.com/JokerYan/NeRF-DS/releases/tag/v0.1-pre-release">here</a>.
-                    </p>
                 </div>
             </div>
 
-            <div class="row mb-4">
-                <div class="col-md-12 mx-auto">
-                <div class="form-group col-md-offset-1 row-md-offset-1">
-                    <h4 class="mb-3">Citation</h4>
-                    <textarea id="bibtex" class="form-control" readonly>
-@article{zhiwen2023nerfds,
-    title={NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects},
-    author={Zhiwen Yan and Chen Li and Gim Hee Lee},
-    journal={CVPR},
-    year={2023}
-}
-                    </textarea>
-                </div>
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-12 mx-auto">
-                    <h4>Acknowledgements</h4>
-                    <p class="text-justify">
-                    This research is supported by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award
-                    No: AISG2-RP-2021-024), and the Tier 2 grant MOE-T2EP20120-0011 from the
-                    Singapore Ministry of Education.
-                    </p>
-                </div>
-            </div>
         </div> <!-- container -->
     </body>
 </DOCTYPE>
