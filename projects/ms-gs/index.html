@@ -1,0 +1,255 @@
+<DOCTYPE html>
+
+    <title>Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering</title>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21408087-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-21408087-2');
+    </script>
+    <script src="./video_comparison.js"></script>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <style>
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <body>
+        <div class="container">
+            <div class="row mb-2 mt-4" id="paper-title">
+                <h3 class="col-md-12 text-center">
+                    Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering
+                </h3>
+                <h3 class="col-md-12 text-center">
+                    <small>Arxiv Preprint</small>
+                </h3>
+            </div>
+
+            <div class="row" id="authors">
+                <div class="mx-auto text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://jokeryan.github.io/about/">Zhiwen Yan</a>
+
+                        <li class="list-inline-item">
+                            <a href="https://wengflow.github.io/">Weng Fei Low</a>
+
+                        <li class="list-inline-item">
+                            <a href="https://aibluefisher.github.io/">Yu Chen</a>
+
+                        <li class="list-inline-item">
+                            <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+                    </ul>
+                    <p id="institution">National University of Singapore</p>
+                </div>
+            </div>
+
+            <div class="row mb-2" id="links">
+                <div class="mx-auto col-md-6 col-md-offset-6">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item text-center">
+                            <a href="https://arxiv.org/to_do">
+                            <image src="img/paper_snapshot.png" height="60px">
+                                <h6><strong>Paper(Soon)</strong></h6>
+                            </image>
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="">
+                            <image src="img/github.png" height="60px">
+                                <h6><strong>Code(Soon)</strong></h6>
+                            </image>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 mx-auto">
+                <video width="100%" controls autoplay muted loop>
+                  <source src="videos/MSGS Supp Video Lower.mp4" type="video/mp4">
+<!--                  <source src="videos/bicycle_concat_h264.mp4" type="video/mp4">-->
+                Your browser does not support the video tag.
+                </video>
+                </div>
+            </div>
+
+
+            <div class="row mb-3" id="abstract">
+                <div class="col-md-12 mx-auto">
+                    <h4>Abstract</h4>
+                    <p class="text-justify">
+                    3D Gaussians have recently emerged as a highly efficient representation for 3D reconstruction and rendering.
+                    Despite its high rendering quality and speed at high resolutions, they both deteriorate drastically when rendered at lower resolutions or from far away camera position.
+                    During low resolution or far away rendering, the pixel size of the image can fall below the Nyquist frequency compared to the screen size of each splatted 3D Gaussian and leads to aliasing effect.
+                    The rendering is also drastically slowed down by the sequential alpha blending of more splatted Gaussians per pixel.
+                    To address these issues, we propose a multi-scale 3D Gaussian splatting algorithm, which maintains Gaussians at different scales to represent the same scene.
+                    Higher-resolution images are rendered with more small Gaussians, and lower-resolution images are rendered with fewer larger Gaussians.
+                    With similar training time, our algorithm can achieve 13%-66% PSNR and 160%-2400% rendering speed improvement at 4x-128x scale rendering on Mip-NeRF360 dataset compared to the single scale 3D Gaussian splatting.
+                    </p>
+
+                    <div class="row mb-3">
+                        <div class="col-md-12 mx-auto">
+    <!--                    <div class="content has-text-centered">-->
+                            <video class="video" width="50%" id="xyalias1" loop playsinline autoplay muted
+                                 src="videos/garden_concat_h264_resize.mp4" onplay="resizeAndPlay(this)" style="height: 100px;"></video>
+                            <canvas height="800" class="videoMerge" id="xyalias1Merge" width="800"></canvas>
+                            <div class="caption">
+                                Speed and Quality Comparison between 3D-GS and Our Method in "Garden" Scene
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-12 mx-auto">
+    <!--                    <div class="content has-text-centered">-->
+                          <video class="video" width="50%" id="xyalias2" loop playsinline autoplay muted
+                                 src="videos/bicycle_concat_h264_resize.mp4" onplay="resizeAndPlay(this)" style="height: 100px;"></video>
+                          <canvas height="800" class="videoMerge" id="xyalias2Merge" width="800"></canvas>
+                            <div class="caption">
+                                Speed and Quality Comparison between 3D-GS and Our Method in "Bicycle" Scene
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <img src="img/archi_v2.png" class="img-responsive">
+
+                    <br><p class="text-justify">
+                    Our algorithm effectively addresses aliasing issues by utilizing multi-scale Gaussians to represent various Levels of Detail (LOD) within a scene.
+                    This approach involves using larger Gaussians for coarser, low-resolution renderings, and smaller Gaussians for finer, high-resolution details.
+                    During the early stages of training, we aggregate small Gaussians from the finer levels to construct larger Gaussians for the coarser levels, as illustrated on the left side of the above figure.
+                    In the rendering phase, we selectively use Gaussians based on their screen size(or pixel coverage) at the current resolution, as shown on the right side of the figure.
+                    This multi-scale representation strategy is pivotal in achieving both high-quality visuals and efficient rendering performance, effectively accommodating a wide range of resolutions.
+                    </p>
+
+                    <img src="img/filter.png" class="img-responsive-80">
+
+                    <br><p class="text-justify">
+                    The selective rendering is based on the screen size(or pixel coverage) of each Gaussian at the current resolution.
+                    During training, the minimum and maximum pixel coverage of each Gaussian are updated during the rendering of the corresponding resolution level.
+                    During rendering, a Gaussian is filtered out if its pixel coverage is much smaller than the minimum pixel coverage of the current resolution level.
+                    </p>
+
+                </div>
+            </div>
+
+<!--            <div class="row mb-4">-->
+<!--                <div class="col-md-12 mx-auto">-->
+<!--                <div class="form-group col-md-offset-1 row-md-offset-1">-->
+<!--                    <h4 class="mb-3">Citation</h4>-->
+<!--                    <textarea id="bibtex" class="form-control" readonly>-->
+<!--                        citation TBD-->
+<!--                    </textarea>-->
+<!--                </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="row mb-3">-->
+<!--                <div class="col-md-12 mx-auto">-->
+<!--                    <h4>Acknowledgements</h4>-->
+<!--                    <p class="text-justify">-->
+<!--                    This research is supported by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award-->
+<!--                    No: AISG2-RP-2021-024), and the Tier 2 grant MOE-T2EP20120-0011 from the-->
+<!--                    Singapore Ministry of Education.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div> <!-- container -->
+    </body>
+</DOCTYPE>
