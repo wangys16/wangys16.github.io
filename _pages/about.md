@@ -17,8 +17,13 @@ My aim is to create intelligent agents that can perceive, understand, plan and i
 
 # Publications
 
-- [NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects](coming_soon) \\
+- [NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects](https://github.com/JokerYan/NeRF-DS) \\
 **Zhiwen Yan**, Chen Li, Gim Hee Lee \\
 The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 \\
-\[[project page](https://jokeryan.github.io/projects/nerf-ds/)\] \[[paper](coming_soon)\] \[[code](https://github.com/JokerYan/NeRF-DS)\]
+\[[project page](https://jokeryan.github.io/projects/nerf-ds/)\] \[[paper](https://arxiv.org/abs/2303.14435)\] \[[code](https://github.com/JokerYan/NeRF-DS)\]
+
+- [Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering](https://jokeryan.github.io/projects/ms-gs/) \\
+**Zhiwen Yan**, Weng Fei Low, Yu Chen, Gim Hee Lee \\
+The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 \\
+\[[project page](https://jokeryan.github.io/projects/ms-gs/)\] \[[paper](https://arxiv.org/abs/2311.17089)\] \[[code](https://github.com/JokerYan/MS-GS/tree/main)\]
 
