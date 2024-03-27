@@ -24,6 +24,6 @@ The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 \\
 
 - [Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering](https://jokeryan.github.io/projects/ms-gs/) \\
 **Zhiwen Yan**, Weng Fei Low, Yu Chen, Gim Hee Lee \\
-The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 \\
+The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024 \\
 \[[project page](https://jokeryan.github.io/projects/ms-gs/)\] \[[paper](https://arxiv.org/abs/2311.17089)\] \[[code](https://github.com/JokerYan/MS-GS/tree/main)\]
 
