@@ -12,7 +12,7 @@ title                    : "Chen Hanlin Personal Page"
 title_separator          : "-"
 name                     : &name "Chen Hanlin"
 description              : &description "Welcome to my personal page! I am currently a PhD candidate at National Univeristy of Singapore, working on research related to scene reconstruction and 3D computer vision."
-url                      : https://hanlin.chen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://HLinChen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HLinChen/hanlin.chen.github.io"
 
