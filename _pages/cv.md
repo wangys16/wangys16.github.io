@@ -9,92 +9,65 @@ redirect_from:
 
 {% include base_path %}
 
-[//]: # ()
-[//]: # (Education)
+Education
+======
+* Ph.D in Computer Science, National University of Singapore, 2026 (expected)
+* M.S. in Pattern Recognition and Intelligent System, Beihang University, 2021
+* B.S. in Aircraft Design and Engineering, Shenyang Aerospace University, 2018
 
-[//]: # (======)
+Work experience
+======
+* 03.2021 - 07.2022: Computer Vision Algorithm Engineer
+  * Alibaba DAMO Academy
+  * Duties includes: Neural Architecture Search (NAS) and 3D Vision 
+  * Supervisor: Mr. Sun Xiuyu and Dr. Lin Ming
 
-[//]: # (* B.S. in GitHub, GitHub University, 2012)
+* Summer 2020: Research Intern
+  * Alibaba DAMO Academy
+  * Duties included: Evaluatint the latency of Neural Networks
+  * Supervisor: Mr. Xiuyu Sun
 
-[//]: # (* M.S. in Jekyll, GitHub University, 2014)
+  
+Skills
+======
+* Programming Languages:
+  * Python
+  * C/C++
+  * matlab
 
-[//]: # (* Ph.D in Version Control Theory, GitHub University, 2018 &#40;expected&#41;)
+* Technologies and Frameworks:
+  * Pytorch
+  * Tensorflow
+  * Linux
 
-[//]: # ()
-[//]: # (Work experience)
+Contact
+======
+Institution: National University of Singapore
 
-[//]: # (======)
+<!-- **Address**: Room 1126, New Main Building #E, XueYuan Road No.37, Beihang University, 100191 -->
 
-[//]: # (* Summer 2015: Research Assistant)
+E-mail: [hanlin.chen@u.nus.edu](mailto:hanlin.chen@u.nus.edu) or [hlchen1105@gmai.com](mailto:hlchen1105@gmai.com) or [hlinchen@foxmail.com](mailto:hlinchen@foxmail.com)
 
-[//]: # (  * Github University)
 
-[//]: # (  * Duties included: Tagging issues)
+<!-- Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul> -->
 
-[//]: # (  * Supervisor: Professor Git)
 
-[//]: # ()
-[//]: # (* Fall 2015: Research Assistant)
-
-[//]: # (  * Github University)
-
-[//]: # (  * Duties included: Merging pull requests)
-
-[//]: # (  * Supervisor: Professor Hub)
-
-[//]: # (  )
-[//]: # (Skills)
-
-[//]: # (======)
-
-[//]: # (* Skill 1)
-
-[//]: # (* Skill 2)
-
-[//]: # (  * Sub-skill 2.1)
-
-[//]: # (  * Sub-skill 2.2)
-
-[//]: # (  * Sub-skill 2.3)
-
-[//]: # (* Skill 3)
-
-[//]: # ()
-[//]: # (Publications)
-
-[//]: # (======)
-
-[//]: # (  <ul>{% for post in site.publications %})
-
-[//]: # (    {% include archive-single-cv.html %})
-
-[//]: # (  {% endfor %}</ul>)
-
-[//]: # (  )
-[//]: # (Talks)
-
-[//]: # (======)
-
-[//]: # (  <ul>{% for post in site.talks %})
-
-[//]: # (    {% include archive-single-talk-cv.html %})
-
-[//]: # (  {% endfor %}</ul>)
-
-[//]: # (  )
-[//]: # (Teaching)
-
-[//]: # (======)
-
-[//]: # (  <ul>{% for post in site.teaching %})
-
-[//]: # (    {% include archive-single-cv.html %})
-
-[//]: # (  {% endfor %}</ul>)
-
-[//]: # (  )
-[//]: # (Service and leadership)
-
-[//]: # (======)
-
-[//]: # (* Currently signed in to 43 different slack teams)
+<!-- Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams -->
