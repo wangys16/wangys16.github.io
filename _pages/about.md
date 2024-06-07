@@ -10,7 +10,7 @@ redirect_from:
   # - /
 ---
 
-I am currently a Ph.D. candidate in the Computer Vision and Robotic Perception (CVRP) Laboratory at <strong> National University of Singapore</strong>, under the supervision of A/P <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>. I worked as a computer vision algorithm engineer in Alibaba Damo Academy, and my tutors were Mr. Sun Xiuyu and Dr. Lin Ming. My research interests are machine learning and 3D computer vision, especially in neural rendering, visual perception and understanding in the real world. I received my M.S. degree in Pattern Recognition and Intelligent Systems from [Beihang University](https://ev.buaa.edu.cn), advised by Prof. [Baochang Zhang](https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en).
+I am currently a Ph.D. candidate in the Computer Vision and Robotic Perception (CVRP) Laboratory at <strong> National University of Singapore</strong>, under the supervision of A/P [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). I worked as a computer vision algorithm engineer in Alibaba Damo Academy, and my tutors were Mr. Sun Xiuyu and Dr. Lin Ming. My research interests are machine learning and 3D computer vision, especially in neural rendering, visual perception and understanding in the real world. I received my M.S. degree in Pattern Recognition and Intelligent Systems from [Beihang University](https://ev.buaa.edu.cn), advised by Prof. [Baochang Zhang](https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en).
 
 
 News
