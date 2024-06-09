@@ -74,6 +74,66 @@ Featured Works
 ======
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/VCR-GauS.jpg" alt="VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction" style="width: 350px; height: auto; margin-right: 20px;">
+  <div>
+    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</a></h3>
+    <p style="margin: 5px 0;">
+          <strong>Hanlin Chen</strong>,
+          <a href="https://weify627.github.io/">Fangyin Wei</a>,
+          <a href="https://chaneyddtt.github.io/">Chen Li</a>,
+          <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
+          <a href="https://scholar.google.com/citations?user=vv1uLeUAAAAJ&hl=en">Yunsong Wang</a>,
+          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+          <br>
+      arXiv, 2024<br>
+      <!-- color: #0073e6; -->
+      <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a>
+      <a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">[PDF]</a> 
+      <a href="https://github.com/HLinChen/VCR-GauS" style="text-decoration: none;">[Code]</a>
+      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
+      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
+        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
+    </p>
+    <!-- <p style="margin: 5px 0;">
+      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
+    </p> -->
+    <div style="display: flex; align-items: center; margin-top: 10px;">
+      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/FreeSplat.jpg" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
+  <div>
+    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2405.17958" style="text-decoration: none;">FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes</a></h3>
+    <p style="margin: 5px 0;">
+          <a href="https://scholar.google.com/citations?user=vv1uLeUAAAAJ&hl=en">Yunsong Wang</a>,
+          <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
+          <strong>Hanlin Chen</strong>,
+          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+          <br>
+      arXiv, 2024<br>
+      <!-- color: #0073e6; -->
+      <!-- <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a> -->
+      <a href="https://arxiv.org/pdf/2405.17958" style="text-decoration: none;">[PDF]</a> 
+      <a href="https://github.com/wangys16/FreeSplat" style="text-decoration: none;">[Code]</a>
+      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
+      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
+        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
+    </p>
+    <!-- <p style="margin: 5px 0;">
+      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
+    </p> -->
+    <div style="display: flex; align-items: center; margin-top: 10px;">
+      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/GOV-NeSF.jpg" alt="GOV-NeSF: Generalizable Open-Vocabulary Neural Semantic Fields" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
@@ -87,14 +147,14 @@ Featured Works
       <!-- color: #0073e6; -->
       <!-- <a href="https://projectpage.com" style="text-decoration: none; ">Project Page</a> / -->
       <a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">[PDF]</a> 
-      <a href="https://github.com/yourrepo" style="text-decoration: none;">[Code]</a>
+      <a href="https://github.com/wangys16/GOV-NeSF" style="text-decoration: none;">[Code]</a>
       <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
       <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
         src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
     </p>
-    <p style="margin: 5px 0;">
+    <!-- <p style="margin: 5px 0;">
       The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
-    </p>
+    </p> -->
     <div style="display: flex; align-items: center; margin-top: 10px;">
       <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
       </a>
@@ -114,17 +174,17 @@ Featured Works
           <a href="https://scholar.google.com/citations?user=vv1uLeUAAAAJ&hl=en">Yunsong Wang</a>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      arXiv<br>
+      arXiv, 2023<br>
       <!-- <a href="https://projectpage.com" style="text-decoration: none;">[Project Page]</a> -->
       <a href="https://arxiv.org/pdf/2312.00846" style="text-decoration: none;">[PDF]</a>
-      <!-- <a href="https://github.com/yourrepo" style="text-decoration: none;">[Code]</a> -->
+      <!-- <a href="https://github.com/wangys16/GOV-NeSF" style="text-decoration: none;">[Code]</a> -->
       <!-- <a href="https://video.com" style="text-decoration: none;">[Video]</a> -->
       <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
         src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
     </p>
-    <p style="margin: 5px 0;">
+    <!-- <p style="margin: 5px 0;">
       The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
-    </p>
+    </p> -->
     <div style="display: flex; align-items: center; margin-top: 10px;">
       <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
       </a>
@@ -142,6 +202,7 @@ Featured Works
       <br>
       NeurIPS, 2023<br>
       <a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">[PDF]</a>
+      <a href="https://github.com/HLinChen/GNeSF" style="text-decoration: none;">[Code]</a>
     </p>
   </div>
 </div>
