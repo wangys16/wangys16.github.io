@@ -1,262 +1,443 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="VCR-GauS">
+  <meta name="keywords" content="VCR-GauS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VCR-GauS</title>
 
-    <title>Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering</title>
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="./static/css/bootstrap-4.4.1.css"> -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21408087-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-        gtag('config', 'UA-21408087-2');
-    </script>
-    <script src="./video_comparison.js"></script>
+    gtag('js', new Date());
 
-    <meta charset="utf-8">
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/72.png">
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+
+  <link rel="stylesheet" href="./static/css/dics.original.css">
+  <script src="./static/js/event_handler.js"></script>
+  <script src="./static/js/dics.original.js"></script>
+  
+</head>
+<body>
 
 
-    <style>
-        /* greek-ext */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
-            unicode-range: U+1F00-1FFF;
-        }
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="margin-bottom: 0"><strong>VCR-GauS</strong></h1>
+          <br>
+          <h2 class="title is-3 publication-title" style="margin-top: 0; margin-bottom: 0">View Consistent Depth-Normal Regularizer</h2>
+          <h2 class="title is-3 publication-title" style="margin-top: 0; margin-bottom: 0">for Gaussian Surface Reconstruction</h2>
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hlinchen.github.io/">Hanlin Chen</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        /* greek */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
-            unicode-range: U+0370-03FF;
-        }
+            <span class="author-block">
+              <a href="https://weify627.github.io/">Fangyin Wei</a><sup>2</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        /* latin-ext */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
-            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
+            <span class="author-block">
+              <a href="https://chaneyddtt.github.io/">Chen Li</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        /* latin */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+            <span class="author-block">
+              <a href="https://tianxinhuang.github.io/">Tianxin Huang</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        /* greek-ext */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
-            unicode-range: U+1F00-1FFF;
-        }
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=vv1uLeUAAAAJ&hl=en">Yunsong Wang</a><sup>1</sup>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        /* greek */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
-            unicode-range: U+0370-03FF;
-        }
+            <span class="author-block">
+              <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a><sup>1</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National University of Singapore</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <span class="author-block"><sup>2</sup>Princeton University</span>
+            
+          </div>
 
-        /* latin-ext */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
-            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/file/d/13i3HeVBiqN8JXnwAzTvQrPz2rShxIhMv/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
 
-        /* latin */
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-    </style>
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/xxxx.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+          
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/HLinChen/VCR-GauS"
+                   class="external-link button is-normal is-rounded is-dark disabled">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://niujinshuchong.github.io/mip-splatting-demo/"
+                   class="external-link button is-normal is-rounded is-dark disabled">
+                  <span class="icon">
+                      <i class="fab fa-dribbble"></i>
+                  </span>
+                  <span>Viewer</span>
+                  </a>
+              </span> -->
 
-    <body>
-        <div class="container">
-            <div class="row mb-2 mt-4" id="paper-title">
-                <h3 class="col-md-12 text-center">
-                    Multi-Scale 3D Gaussian Splatting for Anti-Aliased Rendering
-                </h3>
-                <h3 class="col-md-12 text-center">
-                    <small>Arxiv Preprint</small>
-                </h3>
             </div>
 
-            <div class="row" id="authors">
-                <div class="mx-auto text-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="https://jokeryan.github.io/about/">Zhiwen Yan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                        <li class="list-inline-item">
-                            <a href="https://wengflow.github.io/">Weng Fei Low</a>
-
-                        <li class="list-inline-item">
-                            <a href="https://aibluefisher.github.io/">Yu Chen</a>
-
-                        <li class="list-inline-item">
-                            <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
-                    </ul>
-                    <p id="institution">National University of Singapore</p>
-                </div>
-            </div>
-
-            <div class="row mb-2" id="links">
-                <div class="mx-auto col-md-6 col-md-offset-6">
-                    <ul class="nav nav-pills nav-justified">
-                        <li class="nav-item text-center">
-                            <a href="https://arxiv.org/abs/2311.17089">
-                            <image src="img/paper_snapshot.png" height="60px">
-                                <h6><strong>Paper</strong></h6>
-                            </image>
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://github.com/JokerYan/MS-GS/tree/main">
-                            <image src="img/github.png" height="60px">
-                                <h6><strong>Code</strong></h6>
-                            </image>
-                            </a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a href="https://youtu.be/q77p5nKnpJw">
-                            <image src="img/youtube_icon.png" height="60px">
-                                <h6><strong>Youtube</strong></h6>
-                            </image>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-12 mx-auto">
-                <video width="100%" controls autoplay muted loop>
-                  <source src="videos/MSGS Supp Video Lower.mp4" type="video/mp4">
-<!--                  <source src="videos/bicycle_concat_h264.mp4" type="video/mp4">-->
-                Your browser does not support the video tag.
-                </video>
-                </div>
-            </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+      
+          <!-- <video class="video" width="100%" id="gardenteaser" loop playsinline autoplay muted src="resources/garden_merge.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="gardenteaserMerge"></canvas> -->
+      
+          <!-- <video class="video" width="100%" id="bicycleteaser" loop playsinline autoplay muted src="resources/bicycle_merge.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="bicycleteaserMerge"></canvas> -->
+      
+          <img src="./resources/teaser.jpg" style="transform: scale(1.);" class="center">
+          <h2 class="subtitle has-text-centered" style="margin-top: 25px">
+            TL;DR: VCR-GauS formulates a novel multi-view D-Normal regularizer that enables full optimization of the Gaussian geometric parameters to achieve better surface reconstruction. We further design a confidence term to weigh our D-Normal regularizer to mitigate inconsistencies of normal predictions across multiple views.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-            <div class="row mb-3" id="abstract">
-                <div class="col-md-12 mx-auto">
-                    <h4>Abstract</h4>
-                    <p class="text-justify">
-                    3D Gaussians have recently emerged as a highly efficient representation for 3D reconstruction and rendering.
-                    Despite its high rendering quality and speed at high resolutions, they both deteriorate drastically when rendered at lower resolutions or from far away camera position.
-                    During low resolution or far away rendering, the pixel size of the image can fall below the Nyquist frequency compared to the screen size of each splatted 3D Gaussian and leads to aliasing effect.
-                    The rendering is also drastically slowed down by the sequential alpha blending of more splatted Gaussians per pixel.
-                    To address these issues, we propose a multi-scale 3D Gaussian splatting algorithm, which maintains Gaussians at different scales to represent the same scene.
-                    Higher-resolution images are rendered with more small Gaussians, and lower-resolution images are rendered with fewer larger Gaussians.
-                    With similar training time, our algorithm can achieve 13%-66% PSNR and 160%-2400% rendering speed improvement at 4x-128x scale rendering on Mip-NeRF360 dataset compared to the single scale 3D Gaussian splatting.
-                    </p>
-
-                    <div class="row mb-3">
-                        <div class="col-md-12 mx-auto">
-    <!--                    <div class="content has-text-centered">-->
-                            <video class="video" width="50%" id="xyalias1" loop playsinline autoplay muted
-                                 src="videos/garden_concat_h264_resize.mp4" onplay="resizeAndPlay(this)" style="height: 100px;"></video>
-                            <canvas height="800" class="videoMerge" id="xyalias1Merge" width="800"></canvas>
-                            <div class="caption">
-                                Speed and Quality Comparison between 3D-GS and Our Method in "Garden" Scene
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-12 mx-auto">
-    <!--                    <div class="content has-text-centered">-->
-                          <video class="video" width="50%" id="xyalias2" loop playsinline autoplay muted
-                                 src="videos/bicycle_concat_h264_resize.mp4" onplay="resizeAndPlay(this)" style="height: 100px;"></video>
-                          <canvas height="800" class="videoMerge" id="xyalias2Merge" width="800"></canvas>
-                            <div class="caption">
-                                Speed and Quality Comparison between 3D-GS and Our Method in "Bicycle" Scene
-                            </div>
-                        </div>
-                    </div>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Although 3D Gaussian Splatting has been widely studied because of its realistic and efficient novel-view synthesis, it is still challenging to extract a high-quality surface from the point-based representation. Previous works improve the surface by incorporating geometric priors from the off-the-shelf normal estimator. However, there are two main limitations: 1) Supervising normal rendered from 3D Gaussians updates only the rotation parameter while neglecting other geometric parameters; 2) The inconsistency of predicted normal maps across multiple views may lead to severe reconstruction artifacts. In this paper, we propose a Depth-Normal regularizer that directly couples normal with other geometric parameters, leading to full updates of the geometric parameters from normal regularization. We further propose a confidence term to mitigate inconsistencies of normal predictions across multiple views. Moreover, we also introduce a densification and splitting strategy to regularize the size and distribution of 3D Gaussians for more accurate surface modeling. Compared with Gaussian-based baselines, experiments show that our approach \chl{obtains better reconstruction quality and} maintains competitive appearance quality at faster training speed and 100+ FPS rendering. Our code will be made open-source upon paper acceptance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <!-- Paper video. -->
+    <!--
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    -->
+    <!--/ Paper video. -->
+  </div>
+</section>
 
 
-                    <img src="img/archi_v2.png" class="img-responsive">
 
-                    <br><p class="text-justify">
-                    Our algorithm effectively addresses aliasing issues by utilizing multi-scale Gaussians to represent various Levels of Detail (LOD) within a scene.
-                    This approach involves using larger Gaussians for coarser, low-resolution renderings, and smaller Gaussians for finer, high-resolution details.
-                    During the early stages of training, we aggregate small Gaussians from the finer levels to construct larger Gaussians for the coarser levels, as illustrated on the left side of the above figure.
-                    In the rendering phase, we selectively use Gaussians based on their screen size(or pixel coverage) at the current resolution, as shown on the right side of the figure.
-                    This multi-scale representation strategy is pivotal in achieving both high-quality visuals and efficient rendering performance, effectively accommodating a wide range of resolutions.
-                    </p>
+<!-- 
+<section class="section">
+  <div class="container is-max-desktop">
 
-                    <img src="img/filter.png" class="img-responsive-80">
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Motivation</h2>
 
-                    <br><p class="text-justify">
-                    The selective rendering is based on the screen size(or pixel coverage) of each Gaussian at the current resolution.
-                    During training, the minimum and maximum pixel coverage of each Gaussian are updated during the rendering of the corresponding resolution level.
-                    During rendering, a Gaussian is filtered out if its pixel coverage is much smaller than the minimum pixel coverage of the current resolution level.
-                    </p>
+        <img src="./resources/teaser.png" class="center">
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            XXX
+          </p>
+        </div>
 
-                </div>
-            </div>
+      </div>
+    </div>
+   
 
-<!--            <div class="row mb-4">-->
-<!--                <div class="col-md-12 mx-auto">-->
-<!--                <div class="form-group col-md-offset-1 row-md-offset-1">-->
-<!--                    <h4 class="mb-3">Citation</h4>-->
-<!--                    <textarea id="bibtex" class="form-control" readonly>-->
-<!--                        citation TBD-->
-<!--                    </textarea>-->
-<!--                </div>-->
-<!--                </div>-->
-<!--            </div>-->
+  </div>
+</section> -->
 
-<!--            <div class="row mb-3">-->
-<!--                <div class="col-md-12 mx-auto">-->
-<!--                    <h4>Acknowledgements</h4>-->
-<!--                    <p class="text-justify">-->
-<!--                    This research is supported by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award-->
-<!--                    No: AISG2-RP-2021-024), and the Tier 2 grant MOE-T2EP20120-0011 from the-->
-<!--                    Singapore Ministry of Education.-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-        </div> <!-- container -->
-    </body>
-</DOCTYPE>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Reconstructions on the Tanks and Temples Dataset</h2>
+    <div class="container">
+      
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-caterpillar">
+          <video poster="" id="caterpillar" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/Caterpillar_ours_merge.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-barn">
+          <video poster="" id="barn" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/Barn_ours_merge.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-ignatius">
+          <video poster="" id="ignatius" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/Ignatius_ours_merge.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-truck">
+          <video poster="" id="truck" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/Truck_ours_merge.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <!-- <div class="item item-panther">
+          <video poster="" id="panther" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/ours_merge_Panther.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <br>
+    <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Reconstructions on Mip-NeRF 360 Dataset</h2>
+    <div class="container">
+      
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-treehill">
+          <video poster="" id="treehill" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/ours_merge_treehill.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-flowers">
+          <video poster="" id="flowers" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/ours_merge_flowers.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-stump">
+          <video poster="" id="stump" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/ours_merge_stump.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-garden">
+          <video poster="" id="garden" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/ours_merge_garden.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-bicycle">
+          <video poster="" id="bicycle" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/ours_merge_bicycle.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered ">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Comparisons</h2>
+
+        <!-- <h3 class="title is-4">Comparison wtih 2DGS</h3> -->
+        <div class="content has-text-justified">
+          <p>
+            Compared with 2DGS, our method can reconstruct more detailed and smooth geometry.
+          </p>
+        </div>
+        
+        <div class="content has-text-centered">
+          <video class="video" width="100%" id="xyalias1" loop playsinline autoplay muted src="resources/Truck_2dgs_ours.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="xyalias1Merge"></canvas>
+        </div>
+        
+        <div class="content has-text-centered">
+          <video class="video" width="100%" id="xyalias1" loop playsinline autoplay muted src="resources/Barn_2dgs_ours.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="xyalias1Merge"></canvas>
+        </div>
+
+        <div class="content has-text-centered">
+          <video class="video" width="100%" id="xyalias1" loop playsinline autoplay muted src="resources/Ignatius_2dgs_ours.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="xyalias1Merge"></canvas>
+        </div>
+
+        <div class="content has-text-centered">
+          <video class="video" width="100%" id="xyalias1" loop playsinline autoplay muted src="resources/Caterpillar_2dgs_ours.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="xyalias1Merge"></canvas>
+        </div>
+
+        <!-- <h3 class="title is-4">Comparison wtih SuGaR</h3>
+        <div class="content has-text-justified">
+          <p>
+            Compared with SuGaR, our method can reconstruct more detailed and smooth geometry for both foreground objects and backgrounds.
+          </p>
+        </div>
+        
+        <div class="content has-text-centered">
+          <video class="video" width="100%" id="xyalias9" loop playsinline autoplay muted src="resources/compare_sugar_garden_down.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
+          <canvas height=0 class="videoMerge" id="xyalias9Merge"></canvas>
+        </div>  -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BibTeX. -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{Yu2024GOF,
+  author    = {Yu, Zehao and Sattler, Torsten and Geiger, Andreas},
+  title     = {Gaussian Opacity Fields: Efficient High-quality Compact Surface Reconstruction in Unbounded Scenes},
+  journal   = {arXiv preprint arXiv:2404.10772},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section> -->
+
+<!-- <section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    We thank Christian Reiser for insightful discussions and valuable feedback throughout the project.
+    We also thank Binbin Huang for proofreading. 
+    ZY and AG are supported by the ERC Starting Grant LEGO-3D (850533) and DFG EXC number 2064/1 - project number 390727645.
+    TS is supported by a Czech Science Foundation (GACR) EXPRO grant (UNI-3D, grant no. 23-07973X).
+  </div>
+</section> -->
+
+<section class="section" id="References">
+  <div class="container is-max-desktop content">
+
+        <h3 class="title is-4">References</h3>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" target="_blank">3D Gaussian Splatting for Real-Time Radiance Field Rendering</a>
+            </li>
+
+            <li>
+              <a href="https://arxiv.org/pdf/2312.00846" target="_blank">
+                NeuSG: Neural Implicit Surface Reconstruction with 3D Gaussian Splatting Guidance</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template. 
+            The video comparison with sliding bar is from <a href="https://dorverbin.github.io/refnerf/">Ref-NeRF</a>. 
+            The image comparison with sliding bar is from <a href="https://research.nvidia.com/labs/dir/neuralangelo/">Neuralangelo</a>. 
+          </p>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -114,7 +114,7 @@ Featured Works
           <a href="https://scholar.google.com/citations?user=vv1uLeUAAAAJ&hl=en">Yunsong Wang</a>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      Arxiv<br>
+      arXiv<br>
       <!-- <a href="https://projectpage.com" style="text-decoration: none;">[Project Page]</a> -->
       <a href="https://arxiv.org/pdf/2312.00846" style="text-decoration: none;">[PDF]</a>
       <!-- <a href="https://github.com/yourrepo" style="text-decoration: none;">[Code]</a> -->
