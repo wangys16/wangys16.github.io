@@ -198,7 +198,11 @@ Featured Works
   <div>
     <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">GNeSF: Generalizable Neural Semantic Fields</a></h3>
     <p style="margin: 5px 0;">
-      <strong>Hanlin Chen</strong>, Li Chen, Mengqi Guo, Zhiwen Yan, Gim Hee Lee
+      <strong>Hanlin Chen</strong>,
+      <a href="https://chaneyddtt.github.io/">Chen Li</a>,
+      <a href="https://scholar.google.com/citations?user=Qa4BlOoAAAAJ&hl=en">Mengqi Guo</a>,
+      <a href="https://jokeryan.github.io/about/">Zhiwen Yan</a>,
+      <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
       <br>
       NeurIPS, 2023<br>
       <a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">[PDF]</a>
