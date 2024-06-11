@@ -88,7 +88,7 @@ Featured Works
       arXiv, 2024<br>
       <!-- color: #0073e6; -->
       <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a>
-      <a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">[PDF]</a> 
+      <a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">[PDF]</a> 
       <a href="https://github.com/HLinChen/VCR-GauS" style="text-decoration: none;">[Code]</a>
       <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
       <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
