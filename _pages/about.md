@@ -76,7 +76,7 @@ Featured Works
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/VCR-GauS.jpg" alt="VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction" style="width: 350px; height: auto; margin-right: 20px;">
   <div>
-    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</a></h3>
+    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</a></h3>
     <p style="margin: 5px 0;">
           <strong>Hanlin Chen</strong>,
           <a href="https://weify627.github.io/">Fangyin Wei</a>,
