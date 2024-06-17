@@ -64,7 +64,7 @@ Preprints
           <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      arXiv 2024<br>
+      <b><em>arXiv 2024</em></b><br>
       <!-- color: #0073e6; -->
       <!-- <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a> -->
       <a href="https://arxiv.org/pdf/2405.17958" style="text-decoration: none;">[PDF]</a> 
@@ -95,7 +95,7 @@ Preprints
           <strong>Yunsong Wang</strong>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      <b>arXiv 2024</b><br>
+      <b><em>arXiv 2024</em></b><br>
       <!-- color: #0073e6; -->
       <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a>
       <a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">[PDF]</a> 
