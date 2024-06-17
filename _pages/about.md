@@ -47,7 +47,7 @@ News
     <!-- <p>✈️ [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
     <p>🏆 [15.03.2024] Received the .</p> -->
     <!-- 你可以在这里添加更多隐藏的新闻项 -->
-  </div>
+<!--   </div> -->
 </div>
 
 <!--<a href="#" class="show-more-link" id="show-more-link">⬇ SHOW MORE ⬇</a>
@@ -73,7 +73,7 @@ Preprints
   <div>
     <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2405.17958" style="text-decoration: none;">FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes</a></h3>
     <p style="margin: 5px 0;">
-          <strongYunsong Wang</strong>,
+          <strong>Yunsong Wang</strong>,
           <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
           <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
