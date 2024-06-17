@@ -125,7 +125,7 @@ Preprints
           <strong>Yunsong Wang</strong>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      arXiv 2023<br>
+      <b><em>arXiv 2023</em></b><br>
       <!-- <a href="https://projectpage.com" style="text-decoration: none;">[Project Page]</a> -->
       <a href="https://arxiv.org/pdf/2312.00846" style="text-decoration: none;">[PDF]</a>
       <!-- <a href="https://github.com/wangys16/GOV-NeSF" style="text-decoration: none;">[Code]</a> -->
@@ -156,7 +156,7 @@ Publications
           <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      CVPR 2024<br>
+      <b><em>CVPR 2024</em></b><br>
       <!-- color: #0073e6; -->
       <!-- <a href="https://projectpage.com" style="text-decoration: none; ">Project Page</a> / -->
       <a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">[PDF]</a> 
@@ -187,7 +187,7 @@ Publications
       <a href="=https://mu4yang.com">Linlin Yang</a>,
       <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a>
       <br>
-      WACV 2024 (Oral Presentation)<br>
+      <b><em>WACV 2024 (Oral Presentation)</em></b><br>
       <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Sun_Rethinking_Visibility_in_Human_Pose_Estimation_Occluded_Pose_Reasoning_via_WACV_2024_paper.pdf" style="text-decoration: none;">[PDF]</a>
       <a href="https://github.com/pengzhansun/Occluded-Pose-Reasoning" style="text-decoration: none;">[Code]</a>
     </p>
@@ -204,7 +204,7 @@ Publications
       <a href="https://na-z.github.io">Na Zhao</a>,
       <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
       <br>
-      3DV 2024 (Oral Presentation)<br>
+      <b><em>3DV 2024 (Oral Presentation)</em></b><br>
       <!--<a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">[PDF]</a>
       <a href="https://github.com/HLinChen/GNeSF" style="text-decoration: none;">[Code]</a>-->
     </p>
@@ -223,7 +223,7 @@ Publications
       <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a>,
       <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1">Jie Zhou</a>
       <br>
-      ICCV 2021<br>
+      <b><em>ICCV 2021</em></b><br>
       <a href="https://arxiv.org/abs/2108.02721" style="text-decoration: none;">[PDF]</a>
       <a href="https://github.com/ZiweiWangTHU/ISL" style="text-decoration: none;">[Code]</a>
     </p>
