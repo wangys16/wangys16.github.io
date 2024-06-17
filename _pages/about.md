@@ -219,7 +219,7 @@ Publications
     <p style="margin: 5px 0;">
       <a href="https://ziweiwangthu.github.io">Ziwei Wang</a>,
       <strong>Yunsong Wang</strong>,
-      <a href="=https://wuziyi616.github.io">Ziyi Wu</a>,
+      <a href="https://wuziyi616.github.io">Ziyi Wu</a>,
       <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a>,
       <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1">Jie Zhou</a>
       <br>
