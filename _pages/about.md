@@ -15,25 +15,13 @@ I am currently a second-year Ph.D. candidate in the Computer Vision and Robotic 
 
 News
 ======
-<style>
-  .news-container p {
-    margin: 5px 0; /* 调整段落间距 */
-    line-height: 1.2; /* 调整行高 */
-  }
 
-  .show-more-link {
-    text-align: center;
-    display: block;
-    margin-top: 10px;
-  }
-</style>
-
-<div class="news-container">
-  <p>🙇 [03.2024] Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
-  <p>😎 [11.2023] One paper is accepted at WACV 2024 as an oral paper!</p>
-  <p>😎 [10.2023] Our paper GRL is accepted at 3DV 2024 as an oral paper!</p>
+<div class="mini">
+  <p>🙇 <strong>[03.2024]</strong> Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
+  <p>😎 <strong>[11.2023]</strong> One paper is accepted at WACV 2024 as an oral paper!</p>
+  <p>😎 <strong>[10.2023]</strong> Our paper GRL is accepted at 3DV 2024 as an oral paper!</p>
   <!-- <div id="hidden-news" style="display: none;">-->
-  <p>🚀 [08.2022] I am excited to join the <a href="https://www.comp.nus.edu.sg/~leegh/">CVRP lab</a> of SoC, NUS as a PhD student!</p>
+  <p>🚀 <strong>[08.2022]</strong> I am excited to join the <a href="https://www.comp.nus.edu.sg/~leegh/">CVRP lab</a> of SoC, NUS as a PhD student!</p>
   <!-- <p>🙇 [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
   <p>🚀 [01.2021] I am awarded the <a href="#">Excellent Graduation Thesis</a> in Beihang University!</p>
   <p>🚀 [01.2021] I am awarded the <a href="#">Excellent Graduate</a> in Beihang University!</p>
