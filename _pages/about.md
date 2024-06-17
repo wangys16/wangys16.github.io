@@ -95,7 +95,7 @@ Preprints
           <strong>Yunsong Wang</strong>,
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
-      arXiv 2024<br>
+      <b>arXiv 2024</b><br>
       <!-- color: #0073e6; -->
       <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a>
       <a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">[PDF]</a> 
