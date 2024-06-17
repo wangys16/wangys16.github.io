@@ -190,10 +190,10 @@ Publications
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <img src="images/GRL.pdf" alt="Enhancing Generalizability of Representation Learning for Data-Efficient 3D Scene Understanding" style="width: 350px; height: auto; margin-right: 20px;">
+  <img src="images/rethink.pdf" alt="Rethinking Visibility in Human Pose Estimation: Occluded Pose Reasoning via Transformers" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
-    <h3 style="margin: 0;">Enhancing Generalizability of Representation Learning for Data-Efficient 3D Scene Understanding</a></h3>
+    <h3 style="margin: 0;">Rethinking Visibility in Human Pose Estimation: Occluded Pose Reasoning via Transformersg</a></h3>
     <p style="margin: 5px 0;">
       <a href="https://pengzhansun.github.io/">Pengzhan Sun</a>,
       <a href="https://www.comp.nus.edu.sg/~keruigu/">Kerui Gu</a>,
