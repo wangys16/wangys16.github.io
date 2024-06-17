@@ -10,7 +10,7 @@ redirect_from:
   # - /
 ---
 
-I am currently a Ph.D. candidate in the Computer Vision and Robotic Perception (CVRP) Laboratory at <strong> National University of Singapore</strong>, under the supervision of A/P [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). I worked as a computer vision algorithm engineer in Alibaba Damo Academy, and my tutors were Mr. Sun Xiuyu and Dr. Lin Ming. My research interests are machine learning and 3D computer vision, especially in neural rendering, visual perception and understanding in the real world. I received my M.S. degree in Pattern Recognition and Intelligent Systems from [Beihang University](https://ev.buaa.edu.cn), advised by Prof. [Baochang Zhang](https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en).
+I am currently a Ph.D. candidate in the Computer Vision and Robotic Perception (CVRP) Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, including 3D Scene Representation and Understanding. 
 
 
 News
@@ -30,13 +30,11 @@ News
 
 <div class="news-container">
   <p>😎 [03.2024] Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
-  <p>🚀 [01.2024] I am awarded the <a href="#">Research Achievement Award</a> by NUS!</p>
-  <p>😎 [03.2024] Our paper <a href="https://arxiv.org/pdf/2310.15712.pdf">GNeSF</a> is accepted at NeurIPS 2023!</p>
-
-  <div id="hidden-news" style="display: none;">
-  <p>😎 [10.2023] Our paper <a href="https://link.springer.com/article/10.1007/s11263-023-01826-6">ABanditNAS</a> is accepted at IJCV!</p>
-  <p>👨‍🎓 [08.2022] I joined the <b>CVRP lab</b> of SoC, NUS as a phd student!</p>
-  <p>🙇 [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
+  <p>😎 [11.2023] One paper is accepted at WACV 2024 as an oral paper!</p>
+  <p>😎 [10.2023] Our paper GRL is accepted at 3DV 2024 as an oral paper!</p>
+  <!-- <div id="hidden-news" style="display: none;">-->
+  <p>👨‍🎓 [08.2022] I am excited to join the <a href="https://arxiv.org/pdf/2404.00931">CVRP lab</a> of SoC, NUS as a PhD student!</p>
+  <!-- <p>🙇 [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
   <p>🚀 [01.2021] I am awarded the <a href="#">Excellent Graduation Thesis</a> in Beihang University!</p>
   <p>🚀 [01.2021] I am awarded the <a href="#">Excellent Graduate</a> in Beihang University!</p>
   <p>🚀 [12.2020] I am awarded the <a href="#">National Scholarship in China</a>!</p>
@@ -45,14 +43,14 @@ News
   <p>🙇 [06.2020] I joined <b>Alibaba DAMO Academy</b> as a research intern!</p>
   <p>😎 [04.2020] Our paper <a href="https://www.ijcai.org/proceedings/2020/0144.pdf">CP-NAS</a> is accepted at IJCAI 2020!</p>
   <p>😎 [11.2019] Our paper <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhuo_Cogradient_Descent_for_Bilinear_Optimization_CVPR_2020_paper.pdf">CoGD</a> is accepted at CVPR 2020!</p>
-  <p>😎 [10.2019] Our paper <a href="https://arxiv.org/pdf/1911.10862v1.pdf">BNAS</a> is accepted at AAAI 2020!</p>
+  <p>😎 [10.2019] Our paper <a href="https://arxiv.org/pdf/1911.10862v1.pdf">BNAS</a> is accepted at AAAI 2020!</p> -->
     <!-- <p>✈️ [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
     <p>🏆 [15.03.2024] Received the .</p> -->
     <!-- 你可以在这里添加更多隐藏的新闻项 -->
   </div>
 </div>
 
-<a href="#" class="show-more-link" id="show-more-link">⬇ SHOW MORE ⬇</a>
+<!--<a href="#" class="show-more-link" id="show-more-link">⬇ SHOW MORE ⬇</a>
 
 <script>
   document.getElementById('show-more-link').addEventListener('click', function(event) {
@@ -66,11 +64,9 @@ News
       this.textContent = '⬇ SHOW MORE ⬇';
     }
   });
-</script>
+</script>-->
 
-
-
-Featured Works
+Preprints
 ======
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
@@ -78,11 +74,11 @@ Featured Works
   <div>
     <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</a></h3>
     <p style="margin: 5px 0;">
-          <strong>Hanlin Chen</strong>,
+          <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
           <a href="https://weify627.github.io/">Fangyin Wei</a>,
           <a href="https://chaneyddtt.github.io/">Chen Li</a>,
           <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
-          <a href="https://scholar.google.com/citations?user=vv1uLeUAAAAJ&hl=en">Yunsong Wang</a>,
+          <strong>Yunsong Wang</strong>
           <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
           <br>
       arXiv, 2024<br>
@@ -103,6 +99,42 @@ Featured Works
     </div>
   </div>
 </div>
+
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/VCR-GauS.jpg" alt="VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction" style="width: 350px; height: auto; margin-right: 20px;">
+  <div>
+    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</a></h3>
+    <p style="margin: 5px 0;">
+          <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
+          <a href="https://weify627.github.io/">Fangyin Wei</a>,
+          <a href="https://chaneyddtt.github.io/">Chen Li</a>,
+          <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
+          <strong>Yunsong Wang</strong>
+          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+          <br>
+      arXiv, 2024<br>
+      <!-- color: #0073e6; -->
+      <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a>
+      <a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">[PDF]</a> 
+      <a href="https://github.com/HLinChen/VCR-GauS" style="text-decoration: none;">[Code]</a>
+      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
+      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
+        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
+    </p>
+    <!-- <p style="margin: 5px 0;">
+      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
+    </p> -->
+    <div style="display: flex; align-items: center; margin-top: 10px;">
+      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
+      </a>
+    </div>
+  </div>
+</div>
+
+Publications
+======
+
+
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/FreeSplat.jpg" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
