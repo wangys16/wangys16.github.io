@@ -57,7 +57,7 @@ Preprints
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/FreeSplat.jpg" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
   <div>
-    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2405.17958" style="text-decoration: none;">FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes</a></h3>
+    <h3 style="margin: 0;">FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes</h3>
     <p style="margin: 5px 0;">
           <strong>Yunsong Wang</strong>,
           <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
@@ -86,7 +86,7 @@ Preprints
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/VCR-GauS.jpg" alt="VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction" style="width: 350px; height: auto; margin-right: 20px;">
   <div>
-    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2406.05774" style="text-decoration: none;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</a></h3>
+    <h3 style="margin: 0;">VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction</h3>
     <p style="margin: 5px 0;">
           <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
           <a href="https://weify627.github.io/">Fangyin Wei</a>,
@@ -118,7 +118,7 @@ Preprints
   <img src="images/NeuSG.jpg" alt="NeuSG: Neural implicit surface reconstruction with 3d gaussian splatting guidance" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
-    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2312.00846" style="text-decoration: none;">NeuSG: Neural implicit surface reconstruction with 3d gaussian splatting guidance</a></h3>
+    <h3 style="margin: 0;">NeuSG: Neural implicit surface reconstruction with 3d gaussian splatting guidance</h3>
     <p style="margin: 5px 0;">
           <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
           <a href="https://chaneyddtt.github.io/">Chen Li</a>,
@@ -150,7 +150,7 @@ Publications
   <img src="images/GOV-NeSF.jpg" alt="GOV-NeSF: Generalizable Open-Vocabulary Neural Semantic Fields" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
-    <h3 style="margin: 0;"><a href="https://arxiv.org/pdf/2404.00931" style="text-decoration: none;">GOV-NeSF: Generalizable Open-Vocabulary Neural Semantic Fields</a></h3>
+    <h3 style="margin: 0;">GOV-NeSF: Generalizable Open-Vocabulary Neural Semantic Fields</h3>
     <p style="margin: 5px 0;">
           <strong>Yunsong Wang</strong>,
           <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
@@ -187,7 +187,7 @@ Publications
       <a href="=https://mu4yang.com">Linlin Yang</a>,
       <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a>
       <br>
-      <b><em>WACV 2024 (Oral Presentation)</em></b><br>
+      <b><em>WACV 2024 (<i style="color:#e74d3c"> Oral Presentation </i>)</em></b><br>
       <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Sun_Rethinking_Visibility_in_Human_Pose_Estimation_Occluded_Pose_Reasoning_via_WACV_2024_paper.pdf" style="text-decoration: none;">[PDF]</a>
       <a href="https://github.com/pengzhansun/Occluded-Pose-Reasoning" style="text-decoration: none;">[Code]</a>
     </p>
@@ -204,7 +204,7 @@ Publications
       <a href="https://na-z.github.io">Na Zhao</a>,
       <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
       <br>
-      <b><em>3DV 2024 (Oral Presentation)</em></b><br>
+      <b><em>3DV 2024 (<i style="color:#e74d3c"> Oral Presentation </i>)</em></b><br>
       <!--<a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">[PDF]</a>
       <a href="https://github.com/HLinChen/GNeSF" style="text-decoration: none;">[Code]</a>-->
     </p>
