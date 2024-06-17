@@ -10,7 +10,7 @@ redirect_from:
   # - /
 ---
 
-I am currently a Ph.D. candidate in the Computer Vision and Robotic Perception (CVRP) Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, including 3D Scene Representation and Understanding. 
+I am currently a second-year Ph.D. candidate in the Computer Vision and Robotic Perception (CVRP) Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, including 3D Scene Representation and Understanding. 
 
 
 News
@@ -207,6 +207,25 @@ Publications
       3DV 2024 (Oral Presentation)<br>
       <!--<a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">[PDF]</a>
       <a href="https://github.com/HLinChen/GNeSF" style="text-decoration: none;">[Code]</a>-->
+    </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/ISL.png" alt="Instance Similarity Learning for Unsupervised Feature Representation" style="width: 350px; height: auto; margin-right: 20px;">
+
+  <div>
+    <h3 style="margin: 0;">Instance Similarity Learning for Unsupervised Feature Representation</a></h3>
+    <p style="margin: 5px 0;">
+      <a href="https://ziweiwangthu.github.io">Ziwei Wang</a>,
+      <strong>Yunsong Wang</strong>,
+      <a href="=https://wuziyi616.github.io">Ziyi Wu</a>,
+      <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a>,
+      <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1">Jie Zhou</a>
+      <br>
+      ICCV 2021<br>
+      <a href="https://arxiv.org/abs/2108.02721" style="text-decoration: none;">[PDF]</a>
+      <a href="https://github.com/ZiweiWangTHU/ISL" style="text-decoration: none;">[Code]</a>
     </p>
   </div>
 </div>
