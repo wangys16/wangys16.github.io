@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-My <a href="files/yswang_CV.pdf">CV</a>.
+You may download my CV <a href="files/yswang_CV.pdf">here</a>.
