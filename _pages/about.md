@@ -193,8 +193,8 @@ Publications
       <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
       <br>
       <b><em>3DV 2024 (<i style="color:#e74d3c"> Oral Presentation </i>)</em></b><br>
-      <!--<a href="https://arxiv.org/pdf/2310.15712.pdf" style="text-decoration: none;">[PDF]</a>
-      <a href="https://github.com/HLinChen/GNeSF" style="text-decoration: none;">[Code]</a>-->
+      <a href="https://arxiv.org/abs/2406.11283" style="text-decoration: none;">[PDF]</a>
+      <!--<a href="https://github.com/HLinChen/GNeSF" style="text-decoration: none;">[Code]</a>-->
     </p>
   </div>
 </div>
