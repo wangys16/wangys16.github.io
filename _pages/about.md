@@ -186,7 +186,7 @@ Publications
   <img src="images/GRL.pdf" alt="Enhancing Generalizability of Representation Learning for Data-Efficient 3D Scene Understanding" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
-    <h3 style="margin: 0;">Enhancing Generalizability of Representation Learning for Data-Efficient 3D Scene Understanding</a></h3>
+    <h3 style="margin: 0;">Enhancing Generalizability of Representation Learning for Data-Efficient 3D Scene Understanding</h3>
     <p style="margin: 5px 0;">
       <strong>Yunsong Wang</strong>,
       <a href="https://na-z.github.io">Na Zhao</a>,
