@@ -17,6 +17,7 @@ News
 ======
 
 <div class="mini">
+  <p>😎 <strong>[10.2023]</strong> Our paper OHDA is accepted at WACV 2024!</p>
   <p>🙇 <strong>[03.2024]</strong> Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
   <p>😎 <strong>[11.2023]</strong> One paper is accepted at WACV 2024 as an oral paper!</p>
   <p>😎 <strong>[10.2023]</strong> Our paper GRL is accepted at 3DV 2024 as an oral paper!</p>
@@ -133,6 +134,35 @@ Preprints
 
 Publications
 ======
+
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/OHDA.jpg" alt="Syn-to-Real Unsupervised Domain Adaptation for Indoor 3D Object Detection" style="width: 350px; height: auto; margin-right: 20px;">
+
+  <div>
+    <h3 style="margin: 0;">Syn-to-Real Unsupervised Domain Adaptation for Indoor 3D Object Detection</h3>
+    <p style="margin: 5px 0;">
+          <strong>Yunsong Wang</strong>,
+          <a href="https://na-z.github.io">Na Zhao</a>,
+          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+          <br>
+      <b><em>BMVC 2024</em></b><br>
+      <!-- color: #0073e6; -->
+      <!-- <a href="https://projectpage.com" style="text-decoration: none; ">Project Page</a> / -->
+      <a href="https://arxiv.org/pdf/2406.11311" style="text-decoration: none;">[PDF]</a> 
+<!--       <a href="https://github.com/wangys16/GOV-NeSF" style="text-decoration: none;">[Code]</a> -->
+      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
+      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
+        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
+    </p>
+    <!-- <p style="margin: 5px 0;">
+      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
+    </p> -->
+    <div style="display: flex; align-items: center; margin-top: 10px;">
+      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
+      </a>
+    </div>
+  </div>
+</div>
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/GOV-NeSF.jpg" alt="GOV-NeSF: Generalizable Open-Vocabulary Neural Semantic Fields" style="width: 350px; height: auto; margin-right: 20px;">
