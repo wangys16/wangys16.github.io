@@ -136,7 +136,7 @@ Publications
 ======
 
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <img src="images/OHDA.jpg" alt="Syn-to-Real Unsupervised Domain Adaptation for Indoor 3D Object Detection" style="width: 350px; height: auto; margin-right: 20px;">
+  <img src="images/OHDA.pdf" alt="Syn-to-Real Unsupervised Domain Adaptation for Indoor 3D Object Detection" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
     <h3 style="margin: 0;">Syn-to-Real Unsupervised Domain Adaptation for Indoor 3D Object Detection</h3>
