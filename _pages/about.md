@@ -17,7 +17,7 @@ News
 ======
 
 <div class="mini">
-  <p>😎 <strong>[07.2024]</strong> Our paper OHDA is accepted at WACV 2024!</p>
+  <p>😎 <strong>[07.2024]</strong> Our paper OHDA is accepted at BMVC 2024!</p>
   <p>🙇 <strong>[03.2024]</strong> Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
   <p>😎 <strong>[11.2023]</strong> One paper is accepted at WACV 2024 as an oral paper!</p>
   <p>😎 <strong>[10.2023]</strong> Our paper GRL is accepted at 3DV 2024 as an oral paper!</p>
