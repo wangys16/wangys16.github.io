@@ -37,9 +37,8 @@ News
   <p>🚀 <strong>[08.2022]</strong> I am excited to join the <a href="https://www.comp.nus.edu.sg/~leegh/">CVRP lab</a> of SoC, NUS as a PhD student!</p>
 </div>
 
+<br>
 
-<br>
-<br>
 Preprints
 ======
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
