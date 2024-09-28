@@ -15,6 +15,18 @@ I am currently a third-year Ph.D. candidate in the <strong>Computer Vision and R
 
 News
 ======
+<style>
+  .news-container p {
+    margin: 5px 0; /* 调整段落间距 */
+    line-height: 1.2; /* 调整行高 */
+  }
+
+  .show-more-link {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+</style>
 
 <div class="news-container">
   <p>🚀 <strong>[03.2024]</strong> Two papers <a href="https://arxiv.org/pdf/2405.17958">FreeSplat</a> and <a href="https://hlinchen.github.io/projects/VCR-GauS/">VCR-GauS</a> were accepted at <span style="color: red;">NeurIPS 2024</span>.</p>
