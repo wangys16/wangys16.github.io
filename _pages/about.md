@@ -10,14 +10,14 @@ redirect_from:
   # - /
 ---
 
-I am currently a second-year Ph.D. candidate in the <strong>Computer Vision and Robotic Perception (CVRP)</strong> Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, including 3D Scene Representation and Understanding. 
+I am currently a third-year Ph.D. candidate in the <strong>Computer Vision and Robotic Perception (CVRP)</strong> Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, including 3D Scene Representation and Understanding. 
 
 
 News
 ======
 
-<div class="mini">
-  <p>🚀 <strong>[03.2024]</strong> Two papers were accepted to NeurIPS 2024.</p>
+<div class="news-container">
+  <p>🚀 <strong>[03.2024]</strong> Two papers <a href="https://arxiv.org/pdf/2405.17958">FreeSplat</a> and <a href="https://hlinchen.github.io/projects/VCR-GauS/">VCR-GauS</a> were accepted at <span style="color: red;">NeurIPS 2024</span>.</p>
   <p>😎 <strong>[07.2024]</strong> Our paper OHDA is accepted at BMVC 2024!</p>
   <p>🙇 <strong>[03.2024]</strong> Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
   <p>😎 <strong>[11.2023]</strong> One paper is accepted at WACV 2024 as an oral paper!</p>
