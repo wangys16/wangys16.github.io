@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-You may download my CV from <a href="../files/yswang_CV.pdf">here</a>.
+You may download my CV from <a href="../files/yswang_CV.pdf">here (Updated: 2024.9.28)</a>.
