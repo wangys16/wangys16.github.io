@@ -17,27 +17,12 @@ News
 ======
 
 <div class="mini">
-  <p>🚀 <strong>[03.2024]</strong> Two papers were accepted to NeurIPS 2024.
+  <p>🚀 <strong>[03.2024]</strong> Two papers were accepted to NeurIPS 2024.</p>
   <p>😎 <strong>[07.2024]</strong> Our paper OHDA is accepted at BMVC 2024!</p>
   <p>🙇 <strong>[03.2024]</strong> Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at CVPR 2024!</p>
   <p>😎 <strong>[11.2023]</strong> One paper is accepted at WACV 2024 as an oral paper!</p>
   <p>😎 <strong>[10.2023]</strong> Our paper GRL is accepted at 3DV 2024 as an oral paper!</p>
-  <!-- <div id="hidden-news" style="display: none;">-->
   <p>🚀 <strong>[08.2022]</strong> I am excited to join the <a href="https://www.comp.nus.edu.sg/~leegh/">CVRP lab</a> of SoC, NUS as a PhD student!</p>
-  <!-- <p>🙇 [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
-  <p>🚀 [01.2021] I am awarded the <a href="#">Excellent Graduation Thesis</a> in Beihang University!</p>
-  <p>🚀 [01.2021] I am awarded the <a href="#">Excellent Graduate</a> in Beihang University!</p>
-  <p>🚀 [12.2020] I am awarded the <a href="#">National Scholarship in China</a>!</p>
-  <p>😎 [09.2020] Our paper <a href="https://arxiv.org/pdf/2009.04247.pdf">BNAS</a> is accepted at IJCV!</p>
-  <p>😎 [07.2020] Our paper <a href="https://arxiv.org/pdf/2008.00698.pdf">ABanditNAS</a> is accepted at ECCV 2020!</p>
-  <p>🙇 [06.2020] I joined <b>Alibaba DAMO Academy</b> as a research intern!</p>
-  <p>😎 [04.2020] Our paper <a href="https://www.ijcai.org/proceedings/2020/0144.pdf">CP-NAS</a> is accepted at IJCAI 2020!</p>
-  <p>😎 [11.2019] Our paper <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhuo_Cogradient_Descent_for_Bilinear_Optimization_CVPR_2020_paper.pdf">CoGD</a> is accepted at CVPR 2020!</p>
-  <p>😎 [10.2019] Our paper <a href="https://arxiv.org/pdf/1911.10862v1.pdf">BNAS</a> is accepted at AAAI 2020!</p> -->
-    <!-- <p>✈️ [03.2021] I joined <b>Alibaba DAMO Academy</b> to work as a computer vision algorithm engineer!</p>
-    <p>🏆 [15.03.2024] Received the .</p> -->
-    <!-- 你可以在这里添加更多隐藏的新闻项 -->
-<!--   </div> -->
 </div>
 
 
