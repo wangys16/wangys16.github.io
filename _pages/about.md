@@ -84,7 +84,7 @@ Publications
           <br>
       <b><em>NeurIPS 2024</em></b><br>
       <!-- color: #0073e6; -->
-      <!-- <a href="https://hlinchen.github.io/projects/VCR-GauS/" style="text-decoration: none; ">[Project Page]</a> -->
+      <a href="https://wangys16.github.io/FreeSplat-project/" style="text-decoration: none; ">[Project Page]</a>
       <a href="https://arxiv.org/pdf/2405.17958" style="text-decoration: none;">[PDF]</a> 
       <a href="https://github.com/wangys16/FreeSplat" style="text-decoration: none;">[Code]</a>
       <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
