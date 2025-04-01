@@ -42,6 +42,34 @@ News
 Preprints
 ======
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/FreeSplat++.jpg" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
+  <div>
+    <h3 style="margin: 0;">FreeSplat++: Generalizable 3D Gaussian Splatting for Efficient Indoor Scene Reconstruction</h3>
+    <p style="margin: 5px 0;">
+          <strong>Yunsong Wang</strong>,
+          <a href="https://tianxinhuang.github.io/">Tianxin Huang</a>,
+          <a href="https://hlinchen.github.io/">Hanlin Chen</a>,
+          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+          <br>
+      <b><em>Arxiv 2025</em></b><br>
+      <!-- color: #0073e6; -->
+      <a href="https://wangys16.github.io/FreeSplatPP-Page/" style="text-decoration: none; ">[Project Page]</a>
+      <a href="https://arxiv.org/pdf/2503.22986" style="text-decoration: none;">[PDF]</a> 
+      <a href="https://github.com/wangys16/FreeSplatPP" style="text-decoration: none;">[Code]</a>
+      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
+      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
+        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
+    </p>
+    <!-- <p style="margin: 5px 0;">
+      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
+    </p> -->
+    <div style="display: flex; align-items: center; margin-top: 10px;">
+      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
+      </a>
+    </div>
+  </div>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/NeuSG.jpg" alt="NeuSG: Neural implicit surface reconstruction with 3d gaussian splatting guidance" style="width: 350px; height: auto; margin-right: 20px;">
 
   <div>
