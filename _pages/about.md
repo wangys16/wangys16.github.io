@@ -10,7 +10,7 @@ redirect_from:
   # - /
 ---
 
-I am currently a third-year Ph.D. candidate in the <strong>Computer Vision and Robotic Perception (CVRP)</strong> Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, especially in 3D Gaussian Splatting, Neural Radiance Fields, and 3D Scene Understanding, where I focused on enhancing the efficency and generalization ability of models.
+I am currently a fourth-year Ph.D. candidate in the <strong>Computer Vision and Robotic Perception (CVRP)</strong> Laboratory at <strong> National University of Singapore</strong>, supervised by Prof. [Gim Hee Lee](https://www.comp.nus.edu.sg/~leegh/). Before that, I received my M.Comp. degree from School of Computing, National University of Singapore, and B.Eng. degree from Department of Automation in Tsinghua University, advised by Prof. [Jiwen Lu]([https://scholar.google.com/citations?user=WH0J_34AAAAJ&hl=en](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)). I'm broadly interested in 3D Vision, especially in 3D Gaussian Splatting, Neural Radiance Fields, and 3D Scene Understanding, where I focused on enhancing the efficency and generalization ability of models.
 
 **<span style="color:red;">I am seeking research scientist opportunities opening in 2026 summer, feel free to contact me!</span>**
 
