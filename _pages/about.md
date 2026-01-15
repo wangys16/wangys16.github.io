@@ -42,7 +42,7 @@ News
 Preprints
 ======
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <img src="images/FreeSplat++.jpg" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
+  <img src="images/free2.gif" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
   <div>
     <h3 style="margin: 0;">FreeSplat++: Generalizable 3D Gaussian Splatting for Efficient Indoor Scene Reconstruction</h3>
     <p style="margin: 5px 0;">
