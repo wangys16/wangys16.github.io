@@ -31,6 +31,7 @@ News
 </style>
 
 <div class="news-container">
+  <p>😎 <strong>[04.2025]</strong> Our new paper <a href="https://arxiv.org/pdf/2503.22986">FreeSplat++</a> is proposed!</p>
   <p>🚀 <strong>[09.2024]</strong> Two papers <a href="https://arxiv.org/pdf/2405.17958">FreeSplat</a> and <a href="https://hlinchen.github.io/projects/VCR-GauS/">VCR-GauS</a> were accepted at <span style="color: red;">NeurIPS 2024</span>!</p>
   <p>😎 <strong>[07.2024]</strong> Our paper OHDA is accepted at <span style="color: red;">BMVC 2024</span>!</p>
   <p>🙇 <strong>[02.2024]</strong> Our paper <a href="https://arxiv.org/pdf/2404.00931">GOV-NeSF</a> is accepted at <span style="color: red;">CVPR 2024</span>!</p>
