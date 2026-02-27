@@ -31,6 +31,7 @@ News
 </style>
 
 <div class="news-container">
+  <p>🙇 <strong>[02.2026]</strong> Two papers were accepted to <span style="color: red;">CVPR 2026</span>!</p>
   <p>🚀 <strong>[02.2026]</strong> Our work <a href="https://arxiv.org/pdf/2503.22986">FreeSplat++</a> is accepted to <span style="color: red;">TPAMI 2026</span>!</p>
   <p>😎 <strong>[04.2025]</strong> Our new paper <a href="https://arxiv.org/pdf/2503.22986">FreeSplat++</a> is proposed!</p>
   <p>🚀 <strong>[09.2024]</strong> Two papers <a href="https://arxiv.org/pdf/2405.17958">FreeSplat</a> and <a href="https://hlinchen.github.io/projects/VCR-GauS/">VCR-GauS</a> were accepted at <span style="color: red;">NeurIPS 2024</span>!</p>
@@ -45,32 +46,6 @@ News
 
 Preprints
 ======
-<div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <img src="images/flow.png" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
-  <div>
-    <h3 style="margin: 0;">Flow4DGS-SLAM: Flow-Guided 4D Gaussian Splatting SLAM</h3>
-    <p style="margin: 5px 0;">
-          <strong>Yunsong Wang</strong>,
-          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
-          <br>
-      <b><em>Arxiv 2026</em></b><br>
-      <!-- color: #0073e6; -->
-      <!-- <a href="https://wangys16.github.io/FreeSplatPP-Page/" style="text-decoration: none; ">[Project Page]</a>
-      <a href="https://arxiv.org/pdf/2503.22986" style="text-decoration: none;">[PDF]</a> 
-      <a href="https://github.com/wangys16/FreeSplatPP" style="text-decoration: none;">[Code]</a> -->
-      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
-      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
-        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
-    </p>
-    <!-- <p style="margin: 5px 0;">
-      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
-    </p> -->
-    <div style="display: flex; align-items: center; margin-top: 10px;">
-      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
-      </a>
-    </div>
-  </div>
-</div>
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
   <img src="images/NeuSG.jpg" alt="NeuSG: Neural implicit surface reconstruction with 3d gaussian splatting guidance" style="width: 350px; height: auto; margin-right: 20px;">
 
@@ -103,7 +78,33 @@ Preprints
 Publications
 ======
 <div style="display: flex; align-items: center; margin-bottom: 40px;">
-  <img src="images/free2.gif" alt="FreeSplat: Generalizable 3D Gaussian Splatting Towards Free-View Synthesis of Indoor Scenes" style="width: 350px; height: auto; margin-right: 20px;">
+  <img src="images/flow.png" alt="Flow4DGS-SLAM: Flow-Guided 4D Gaussian Splatting SLAM" style="width: 350px; height: auto; margin-right: 20px;">
+  <div>
+    <h3 style="margin: 0;">Flow4DGS-SLAM: Flow-Guided 4D Gaussian Splatting SLAM</h3>
+    <p style="margin: 5px 0;">
+          <strong>Yunsong Wang</strong>,
+          <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+          <br>
+      <b><em>CVPR 2026</em></b><br>
+      <!-- color: #0073e6; -->
+      <!-- <a href="https://wangys16.github.io/FreeSplatPP-Page/" style="text-decoration: none; ">[Project Page]</a>
+      <a href="https://arxiv.org/pdf/2503.22986" style="text-decoration: none;">[PDF]</a> 
+      <a href="https://github.com/wangys16/FreeSplatPP" style="text-decoration: none;">[Code]</a> -->
+      <!-- <a href="https://video.com" style="text-decoration: none;">Video</a> / -->
+      <!-- <a class="more-link" href="https://github.com/HeliosZhao/Animate124" target="_blank"><img alt="GitHub stars" align="right"
+        src="https://img.shields.io/github/stars/HeliosZhao/Animate124?style=social"></a> -->
+    </p>
+    <!-- <p style="margin: 5px 0;">
+      The first work to animate a single in-the-wild image into 3D video through textual motion descriptions.
+    </p> -->
+    <div style="display: flex; align-items: center; margin-top: 10px;">
+      <a href="https://github.com/yourrepo" style="display: flex; align-items: center; text-decoration: none; color: #000;">
+      </a>
+    </div>
+  </div>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 40px;">
+  <img src="images/free2.gif" alt="FreeSplat++: Generalizable 3D Gaussian Splatting for Efficient Indoor Scene Reconstruction" style="width: 350px; height: auto; margin-right: 20px;">
   <div>
     <h3 style="margin: 0;">FreeSplat++: Generalizable 3D Gaussian Splatting for Efficient Indoor Scene Reconstruction</h3>
     <p style="margin: 5px 0;">
